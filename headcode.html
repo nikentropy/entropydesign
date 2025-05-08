@@ -23,19 +23,6 @@
 
 
 
-<script>
-/* For form modal zoom prevention */
-document.addEventListener('gesturestart', function(e) {
-  e.preventDefault();
-  return false;
-}, { passive: false });
-
-document.addEventListener('touchmove', function(e) {
-  if (e.scale !== 1 && e.scale !== undefined) {
-    e.preventDefault();
-  }
-}, { passive: false });
-</script>
 
 <style>
 /* Form modal zoom prevention - original container styles */
